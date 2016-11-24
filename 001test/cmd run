@@ -1,0 +1,92 @@
+D:\00GoogleDrive\wwwroot\node\javascript\001test>node
+> node hello.js
+SyntaxError: Unexpected identifier
+    at Object.exports.createScript (vm.js:24:10)
+    at REPLServer.defaultEval (repl.js:235:25)
+    at bound (domain.js:287:14)
+    at REPLServer.runBound [as eval] (domain.js:300:12)
+    at REPLServer.<anonymous> (repl.js:431:12)
+    at emitOne (events.js:82:20)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:211:10)
+    at REPLServer.Interface._line (readline.js:550:8)
+    at REPLServer.Interface._ttyWrite (readline.js:827:14)
+> require('./hello.js');
+Hello Node
+{}
+> console.log("Run Javascript in Command Promt");
+Run Javascript in Command Promt
+undefined
+> .exit
+
+D:\00GoogleDrive\wwwroot\node\javascript\001test>sudo npm install http-server -g
+
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\00GoogleDrive\wwwroot\node\javascript\001test>npm install http-server -g
+C:\Users\Ngo Xuan Dang\AppData\Roaming\npm\http-server -> C:\Users\Ngo Xuan Dang
+\AppData\Roaming\npm\node_modules\http-server\bin\http-server
+C:\Users\Ngo Xuan Dang\AppData\Roaming\npm\hs -> C:\Users\Ngo Xuan Dang\AppData\
+Roaming\npm\node_modules\http-server\bin\http-server
+http-server@0.9.0 C:\Users\Ngo Xuan Dang\AppData\Roaming\npm\node_modules\http-s
+erver
+├── opener@1.4.2
+├── corser@2.0.1
+├── colors@1.0.3
+├── http-proxy@1.15.2 (eventemitter3@1.2.0, requires-port@1.0.0)
+├── optimist@0.6.1 (wordwrap@0.0.3, minimist@0.0.10)
+├── ecstatic@1.4.1 (url-join@1.1.0, mime@1.3.4, he@0.5.0, minimist@1.2.0)
+├── portfinder@0.4.0 (async@0.9.0, mkdirp@0.5.1)
+└── union@0.4.6 (qs@2.3.3)
+
+D:\00GoogleDrive\wwwroot\node\javascript\001test>
+
+D:\00GoogleDrive\wwwroot\node\javascript\001test>http-server
+Starting up http-server, serving ./
+Available on:
+  http://192.168.16.5:8080
+  http://192.168.56.1:8080
+  http://127.0.0.1:8080
+Hit CTRL-C to stop the server
+[Wed Nov 23 2016 10:54:05 GMT+0700 (SE Asia Standard Time)] "GET /" "Mozilla/5.0
+ (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840
+.99 Safari/537.36"
+[Wed Nov 23 2016 10:54:06 GMT+0700 (SE Asia Standard Time)] "GET /favicon.ico" "
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrom
+e/54.0.2840.99 Safari/537.36"
+[Wed Nov 23 2016 10:54:06 GMT+0700 (SE Asia Standard Time)] "GET /favicon.ico" E
+rror (404): "Not found"
+
+D:\00GoogleDrive\wwwroot\node\javascript\001test>http-server -p8081
+Starting up http-server, serving ./
+Available on:
+  http://192.168.16.5:8081
+  http://192.168.56.1:8081
+  http://127.0.0.1:8081
+Hit CTRL-C to stop the server
+[Wed Nov 23 2016 11:36:35 GMT+0700 (SE Asia Standard Time)] "GET /" "Mozilla/5.0
+ (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840
+.99 Safari/537.36"
+[Wed Nov 23 2016 11:36:35 GMT+0700 (SE Asia Standard Time)] "GET /favicon.ico" "
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrom
+e/54.0.2840.99 Safari/537.36"
+[Wed Nov 23 2016 11:36:35 GMT+0700 (SE Asia Standard Time)] "GET /favicon.ico" E
+rror (404): "Not found"
+http-server stopped.
+
+D:\00GoogleDrive\wwwroot\node\javascript\001test>cd..
+
+D:\00GoogleDrive\wwwroot\node\javascript>http-server -p8081
+Starting up http-server, serving ./
+Available on:
+  http://192.168.16.5:8081
+  http://192.168.56.1:8081
+  http://127.0.0.1:8081
+Hit CTRL-C to stop the server
+[Wed Nov 23 2016 11:37:12 GMT+0700 (SE Asia Standard Time)] "GET /" "Mozilla/5.0
+ (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840
+.99 Safari/537.36"
+[Wed Nov 23 2016 11:37:18 GMT+0700 (SE Asia Standard Time)] "GET /001test/" "Moz
+illa/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/5
+4.0.2840.99 Safari/537.36"
